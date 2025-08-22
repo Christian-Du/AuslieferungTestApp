@@ -12,6 +12,9 @@
         <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
         <DebugType Condition="'$(Configuration)' == 'Release'">None</DebugType>
         <DebugSymbols Condition="'$(Configuration)' == 'Release'">false</DebugSymbols>
+        <PublishTrimmed Condition="'$(Configuration)' == 'Release'">true</PublishTrimmed>
+        <PublishReadyToRun Condition="'$(Configuration)' == 'Release'">true</PublishReadyToRun>
+        <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi"
